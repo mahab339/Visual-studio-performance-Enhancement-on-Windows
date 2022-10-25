@@ -14,3 +14,7 @@ wmic process where name="ServiceHub.RoslynCodeAnalysisService.exe" CALL setprior
 wmic process where name="ServiceHub.IdentityHost.exe" CALL setpriority "Realtime"
 wmic process where name="ServiceHub.IndexingService.exe" CALL setpriority "Realtime"
 wmic process where name="PerfWatson2.exe" CALL setpriority "Realtime"
+wmic process where name="MSBuild.exe" CALL setpriority "Realtime"
+wmic process where name="conhost.exe" CALL setpriority "Realtime"
+wmic process where name="VBCSCompiler.exe" CALL setpriority "Realtime"
+wmic process where name="adb.exe" CALL setpriority "Realtime"
