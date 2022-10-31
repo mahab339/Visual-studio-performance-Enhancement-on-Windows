@@ -1,6 +1,6 @@
 @ECHO OFF
 ECHO Setting process priority    
-wmic process where name="devenv.exe" CALL setpriority "Realtime"
+wmic process where name="devenv.exe" CALL setpriority "High priority"
 wmic process where name="Microsoft.ServiceHub.Controller.exe" CALL setpriority "Realtime"
 wmic process where name="ServiceHub.VSDetouredHost.exe" CALL setpriority "Realtime"
 wmic process where name="ServiceHub.SettingsHost.exe" CALL setpriority "Realtime"
